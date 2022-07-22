@@ -15,7 +15,7 @@ public class ApiResponseEntity {
 	
 	String message;
 	
-	Object data;	
+	Object data;
 	
 	public ApiResponseEntity(int statusCode, String message) {
 		super();
