@@ -8,7 +8,7 @@
 		<version>2.7.1</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.ams</groupId>
+	<groupId>com.drps</groupId>
 	<artifactId>AMS</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>AMS</name>
@@ -68,6 +68,12 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/commons-beanutils/commons-beanutils -->
+		<dependency>
+		    <groupId>commons-beanutils</groupId>
+		    <artifactId>commons-beanutils</artifactId>
+		    <version>1.9.4</version>
+		</dependency>		
 	</dependencies>
 
 	<build>
