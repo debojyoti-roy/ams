@@ -37,7 +37,7 @@ public class UserDetailsController {
 		return ResponseEntity.status(HttpStatus.OK).body(userDetailsService.saveOrUpdate(userDetailsDTO));		
 	}
 	
-	@GetMapping(value = "/list-view/get")
+	@GetMapping(value = "/list_view/get")
 	public ResponseEntity<ApiResponseEntity> getListView() throws Exception {
 		logger.info("AMS - UserDetailsController getListView");
 		return ResponseEntity.status(HttpStatus.OK).body(userDetailsService.getListView());		
