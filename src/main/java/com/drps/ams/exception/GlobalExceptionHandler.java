@@ -17,6 +17,18 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
         return response;
     }
 	
+	@ExceptionHandler(NoRecordFoundException.class)
+    public ApiResponseEntity handleNoRecordFoundException(NoRecordFoundException exception, WebRequest webRequest) {
+    	ApiResponseEntity response = new ApiResponseEntity(ApiConstants.RESP_STATUS_NO_RECORD_FOUND_EXCEPTION, exception.getMessage());      
+        return response;
+    }
+	
+	@ExceptionHandler(RecordIdNotFoundException.class)
+    public ApiResponseEntity handleRecordIdNotFoundException(NoRecordFoundException exception, WebRequest webRequest) {
+    	ApiResponseEntity response = new ApiResponseEntity(ApiConstants.RESP_STATUS_NO_RECORD_FOUND_EXCEPTION, exception.getMessage());      
+        return response;
+    }
+	
 	@ExceptionHandler(Exception.class)
     public ApiResponseEntity handleExceptions(Exception exception, WebRequest webRequest) {
     	ApiResponseEntity response = new ApiResponseEntity(ApiConstants.RESP_STATUS_EXCEPTION, exception.getMessage());      

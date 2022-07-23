@@ -34,6 +34,8 @@ public class ApiResponseEntity {
 		this.statusCode = statusCode;
 		this.message = message;
 		this.data = data;
-	}	
+	}
+
+	
 
 }
